@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><AssemblyName>FeatureShift</AssemblyName>
+    <PackAsTool>true</PackAsTool><ToolCommandName>feature-shift</ToolCommandName><PackageId>FeatureShift.Tool</PackageId><Version>0.1.0</Version>
+    <Authors>alirezaRanjbar4</Authors><Description>Offline descriptive numeric-feature comparison for training and evaluation datasets.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression><PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/alirezaRanjbar4/feature-shift</RepositoryUrl><PackageProjectUrl>https://github.com/alirezaRanjbar4/feature-shift</PackageProjectUrl>
+    <PackageTags>csharp;dotnet;machine-learning;training;data-quality;monitoring</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../README.md;../../LICENSE;../../CONTRIBUTING.md;../../ROADMAP.md;../../CHANGELOG.md" Pack="true" PackagePath="/" />
+    <None Include="../../docs/*.md" Pack="true" PackagePath="docs/" />
+    <None Include="../../examples/*.jsonl;../../examples/*.md" Pack="true" PackagePath="examples/" />
+    <None Include="../../.github/workflows/ci.yml" Pack="true" PackagePath=".github/workflows/" />
+  </ItemGroup>
+</Project>
